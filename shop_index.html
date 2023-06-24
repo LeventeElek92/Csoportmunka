@@ -1,117 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webshop Client Side</title>
-</head>
-<body>
+    <link rel="stylesheet" href="shop_index.css" />
+  </head>
+  <body>
     <!-- Header-->
 
-    <div class="header_div">
-
-        <div class="header_logo"><img src="" id="header_img"></div>
-        <div class="header_brand"></div>
-        <button class="header_button" type="button" value="Click">Click</button>
-
+    <div class="">
+      <nav>
+        <div class="NavLogo">
+          <img
+            src="https://cdn.dribbble.com/users/5661354/screenshots/15075876/media/4513379629f6dbc8f1be55f01a27bf4b.jpg?compress=1&resize=400x300&vertical=top"
+            alt=""
+          />
+        </div>
+        <div class="NavList fade-in-left">
+          <ul>
+            <li class="list">Home</li>
+            <li class="list">Products</li>
+            <li class="list">About</li>
+            <li class="list">Contact</li>
+          </ul>
+        </div>
+        <div class="NavContact">
+          <a
+            href="#"
+            class="Contact"
+            onclick="toggleButtonColors()"
+            id="ContactButton"
+            >Kapcsolat</a
+          >
+        </div>
+      </nav>
     </div>
-
     <!--Carousel-->
 
     <div class="slideshow-container">
+      <div class="Containers">
+        <div class="MessageInfo">1 / 4</div>
+        <img src="" />
+        <div class="Info">First caption</div>
+      </div>
 
-        <div class="Containers">
-            <div class="MessageInfo">1 / 4</div>
-                <img src="">
-            <div class="Info">First caption</div>
-        </div>
+      <div class="Containers">
+        <div class="MessageInfo">2 / 4</div>
+        <img src="" />
+        <div class="Info">Second caption</div>
+      </div>
 
-        <div class="Containers">
-            <div class="MessageInfo">2 / 4</div>
-                <img src="">
-            <div class="Info">Second caption</div>
-        </div>
+      <div class="Containers">
+        <div class="MessageInfo">3 / 4</div>
+        <img src="" />
+        <div class="Info">Third caption</div>
+      </div>
 
-        <div class="Containers">
-            <div class="MessageInfo">3 / 4</div>
-                <img src="">
-            <div class="Info">Third caption</div>
-        </div>
+      <div class="Containers">
+        <div class="MessageInfo">4 / 4</div>
+        <img src="" />
+        <div class="Info">Fourth caption</div>
+      </div>
 
-        <div class="Containers">
-            <div class="MessageInfo">4 / 4</div>
-                <img src="">
-            <div class="Info">Fourth caption</div>
-        </div>
+      <!--Back / Forward buttons-->
 
-    <!--Back / Forward buttons-->
-
-        <a class="Back" onclick="plusSlides(-1)"></a>
-        <a class="forward" onclick="plusSlides(1)"></a>
-
+      <a class="Back" onclick="plusSlides(-1)"></a>
+      <a class="forward" onclick="plusSlides(1)"></a>
     </div>
 
     <!--Dots below-->
 
     <div class="dot_container">
+      <span class="dots" onclick="currentSlide(1)"></span>
+      <span class="dots" onclick="currentSlide(2)"></span>
+      <span class="dots" onclick="currentSlide(3)"></span>
+      <span class="dots" onclick="currentSlide(4)"></span>
+    </div>
 
-        <span class="dots" onclick="currentSlide(1)"></span>
-        <span class="dots" onclick="currentSlide(2)"></span>
-        <span class="dots" onclick="currentSlide(3)"></span>
-        <span class="dots" onclick="currentSlide(4)"></span>
-
-      </div> 
-
-      <!--Subcategory for products-->
+    <!--Subcategory for products-->
 
     <div class="food_category_container">
+      <div class="food_category">
+        <img src="" class="food_pics" id="food_pic" />
+        <div class="food_details">Random text</div>
+      </div>
 
-        <div class="food_category"><img src="" class="food_pics" id="food_pic">
-            <div class="food_details">Random text</div>
-        </div>
+      <div class="food_category">
+        <img src="" class="food_pics" id="food_pic" />
+        <div class="food_details">Random text</div>
+      </div>
 
-        <div class="food_category"><img src="" class="food_pics" id="food_pic">
-            <div class="food_details">Random text</div>
-        </div>
+      <div class="food_category">
+        <img src="" class="food_pics" id="food_pic" />
+        <div class="food_details">Random text</div>
+      </div>
 
-        <div class="food_category"><img src="" class="food_pics" id="food_pic">
-            <div class="food_details">Random text</div>
-        </div>
-
-        <div class="food_category"><img src="" class="food_pics" id="food_pic">
-            <div class="food_details">Random text</div>
-        </div>
-
+      <div class="food_category">
+        <img src="" class="food_pics" id="food_pic" />
+        <div class="food_details">Random text</div>
+      </div>
     </div>
 
     <!--Featured product container-->
 
     <div class="featured_product_field">
+      <div class="featured_product_img"><img src="" id="feat_prod_img" /></div>
 
-        <div class="featured_product_img"><img src="" id="feat_prod_img"></div>
-
-        <div class="featured_product_details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam quia et? Eius veniam blanditiis nihil reiciendis suscipit incidunt, saepe, porro atque nostrum neque ipsum, reprehenderit eum? Id, fugiat cum.</div>
-
+      <div class="featured_product_details">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam
+        quia et? Eius veniam blanditiis nihil reiciendis suscipit incidunt,
+        saepe, porro atque nostrum neque ipsum, reprehenderit eum? Id, fugiat
+        cum.
+      </div>
     </div>
 
     <!--Footer-->
 
     <div>
+      <footer>
+        <div class="side_logo"><img src="" /></div>
 
-        <footer>
-
-            <div class="side_logo"><img src=""></div>  
-
-            <div class="side_contact">
-                <p class="contact">Contact us</p>
-                <p class="phone">Phone</p>
-                <p class="email">E-mail</p>
-                <p class="gdpr">GDPR</p>
-            </div>
-
-        </footer>
-
+        <div class="side_contact">
+          <p class="contact">Contact us</p>
+          <p class="phone">Phone</p>
+          <p class="email">E-mail</p>
+          <p class="gdpr">GDPR</p>
+        </div>
+      </footer>
     </div>
-
-</body>
+    <script src="shop_index.js"></script>
+  </body>
 </html>
